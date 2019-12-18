@@ -1,0 +1,115 @@
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+input[type=yazi],
+input[type=num],
+input[type=tarih],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    margin-right: 238px;
+    margin-left: 313px;
+    padding: 34px;
+}
+
+.tab {
+    float: center;
+    padding-left: -13px;
+    margin-left: 0px;
+}
+
+.tab-1 {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.tab-1 input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tab-1 select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tab-1 textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tab-2 {
+    margin-left: 50px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    transition: all .25s ease-in-out;
+}
+
+td:last-child {
+    background-color: #F00;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+td:nth-last-child(2) {
+    background-color: blue;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tab-2 tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tab-2 tr:hover {
+    background-color: #ddd;
+}
+
+.tab-2 th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}

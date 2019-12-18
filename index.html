@@ -1,0 +1,58 @@
+<!--
+12. HAFTA ÖDEVİ
+DİNAMİK FORM GİRİŞİ AYNI SAYFA İÇİNDE LİSTELEME
+MEHMET YAŞAR KAYTAN - 19817046 
+!--> 
+<!DOCTYPE html> 
+<html lang="tr"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+        <title>KAYIT FORMU</title>         
+        <link rel="stylesheet" type="text/css" href="Stil.css"> 
+    </head>     
+    <center>
+        <img src="galeri/logo.png">
+    </center>     
+    <center>
+        <b>12. HAFTA ÖDEVİ </b>
+        <br>JAVA SCRİPT, HTML ve CSS kullanarak bir kayıt formuna girilen bilgileri, formla aynı sayfada yer alan bir tabloya ekleyiniz. Girilen her yeni bilgi ile submit olan form tabloya yeni bir satır olarak eklenecektir.
+    </center>
+    <br> 
+    <center>
+        <b>MEHMET YAŞAR KAYTAN - 19817046</b>
+    </center>
+    <br> 
+    <body> 
+        <div class="container"> 
+            <div class="tab tab-1"> 
+                İsim :
+                <input type="yazi" name="isim" id="isim"> *İkinci İsim :
+                <input type="yazi" name="ikinciisim" id="ikinciisim"> Soyisim :
+                <input type="yazi" name="soyisim" id="soyisim"> Doğum Tarihi :
+                <input type="tarih" name="dogumtarihi" id="dogumtarihi"> Cinsiyet :
+                <select name="cinsiyet" id="cinsiyet"> 
+                    <option>Seçiniz</option>                     
+                    <option>Erkek</option>                     
+                    <option>Kadın</option>                     
+                </select>                 Adres :
+                <textarea name="add" id="add"></textarea> İletişim Numarası :
+                <input type="num" name="num" id="num"> 
+                <input type="submit" onclick="addRow();">
+            </input>
+        </div>         
+        <div class="tab tab-2"> 
+            <table id="table" border="1"> 
+                <tr> 
+                    <th>İsim ve Soyisim</th> 
+                    <th>Doğum Tarihi</th> 
+                    <th>Cinsiyet</th> 
+                    <th>Adres</th> 
+                    <th>İletişim Numarası</th> 
+                </tr>                 
+            </table>             
+        </div>         
+    </div>     
+    <script type="text/javascript" src="javascript.js"></script>     
+</body> 
